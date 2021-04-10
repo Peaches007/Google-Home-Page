@@ -1,0 +1,242 @@
+/******************* Global Styles **********************/
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/************************ Navigation********************/
+nav {
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: flex-end;
+    width: 20%;
+    margin-left: auto;
+    font-size: 0.8125rem;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-right: 2%;
+}
+.nav-item {
+    margin-left: 7%;
+}
+nav img {
+    height: 1.4375rem;
+    width: 1.4375rem;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+nav button {
+    font-size: 0.8125rem;
+    line-height: 16px;
+    background-color: #1A73E8;
+    color: white;
+    padding: 10px 27px;
+    border: none;
+    border-radius: 4px;
+    margin-top: -5px;
+    width: 6.3rem;
+}
+.nav-btn:hover {
+    background-color: rgba(26,115,232, 0.9);
+    border: none;
+    box-shadow: 0px 1px 7px 1px #D9DDE2;;
+}
+.nav-btn:active {
+    background-color: rgba(26,115,232, 0.7);
+}
+.nav-btn:focus {
+    outline: none;
+}
+
+/************************* Main Content ************************/
+main {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.search-icon {
+    height: 15px;
+}
+.mic-icon {
+    height: 22px;
+}
+input {
+    border: none;
+}
+.search-bar {
+    border: 1px solid #e4e3e3;
+    border-radius: 30px;
+    width: 550px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 28px;
+    position: relative;
+}
+.search-bar:hover {
+    box-shadow: 0 1px 4px 1px #e4e3e3;
+}
+.search-icon {
+    position: absolute;
+    left: 10px;
+}
+.mic-icon {
+    position: absolute;
+    right: 10px;
+}
+.input-box {
+    border: none;
+    width: 90%;
+}
+.input-box:focus {
+    outline: none;
+}
+
+.btns {
+    margin-top: 17px;
+}
+.btn {
+    background-color: #F8F9FA;
+    color: #202124;
+    font-size: 14px;
+    line-height: 27px;
+    margin: 11px 4px;
+    padding: 5px 16px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.btn:hover {
+    box-shadow: 0 1px 2px 1px #dadada;
+}
+.btn:active {
+    border: 1px solid #1A73E8;
+}
+.btn:focus {
+    outline: none;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 20.5%;
+}
+.languages p {
+    color: #222;
+    font-size: 13px;
+}
+.languages a {
+    text-decoration: none;
+    padding: 0 5px;
+}
+.languages a:hover {
+    text-decoration: underline;
+}
+
+/************************** Footer Styles ********************************/
+.footer-container {
+    width: 100%;
+    background-color: #F2F2F2;
+    display: block;
+}
+.footer-paragraph {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 1em 2em;
+    border-bottom: 1px solid #DADCE0;
+    font-size: 15px;
+}
+
+.bottom-container {
+    padding: 1em 2.5em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    flex-wrap: wrap;
+} 
+footer a {
+    text-decoration: none;
+    color: #70757a;
+}
+.left {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+.how-it-works .how-it-works .how-it-works {
+    white-space: nowrap;
+}
+.center {
+    order: 2;
+}
+.left a {
+    margin-right: 23px;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;   
+}
+.right a {
+    margin-left: 23px;
+}
+footer img {
+    height: 1em;
+} 
+
+/************************** Responsive Styles ********************************/
+@media screen and (max-width: 610px) {
+    .search-bar {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav button {
+        padding: 10px 20px;
+        width: 6rem;
+    }
+    .main {
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .main {
+        width: 80%;
+    }
+    .bottom-container{
+        justify-content: space-evenly;
+    }
+    .center {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+        vertical-align: top;
+        white-space: nowrap;
+        margin-left: 34%;
+    }
+    .center, .left {
+        margin-bottom: 5%;
+    }
+    .how-it-works {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
